@@ -36,7 +36,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kda-sQ-aES" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kda-sQ-aES" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                             <rect key="frame" x="100" y="35" width="252" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </stackView>
@@ -46,6 +46,7 @@
                                     <outlet property="nameLabel" destination="giN-q2-3gS" id="0Es-kz-V7L"/>
                                     <outlet property="photoImageView" destination="Fnj-14-m08" id="MCU-jk-Uzs"/>
                                     <outlet property="ratingControl" destination="Kda-sQ-aES" id="dTe-MB-w3c"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="mG5-zW-z3j"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -173,10 +174,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBA-el-2xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="856.79999999999995" y="133.5832083958021"/>
+            <point key="canvasLocation" x="858" y="717"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultImage" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mG5-zW-z3j"/>
+    </inferredMetricsTieBreakers>
 </document>
